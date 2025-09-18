@@ -8,62 +8,97 @@
 </head>
 
 <body>
-    <table width="100%" height="100%" border="1">
+    <table width="100%" border="1">
+        <thead>
+            <th>
+               <a href="../tags/index.html">Elements</a>
+            </th>
+            <th>
+                <a href="../hyper-text/index.html">HTML</a>
+            </th>
+            <th>
+               <a href="../networking/index.html">Networking</a>
+            </th>
+        </thead>
+    </table>
+
+    <table width="100%" border="1">
         <caption>
             <h1>Deploy your static website</h1>
             <div>
                 <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1720706045613/eaa98b5c-2309-4abd-859e-02e1c4d45ad4.png"
-                    width="40%" alt="deploy image">
+                    width="60%" alt="deploy-image">
             </div>
         </caption>
-        <thead>
-            <tr>
-                <th>Deploy via GitHub Pages</th>
-                <th>Deploy via Netlify</th>
-                <th>Deploy via Render</th>
-            </tr>
-        </thead>
         <tbody>
             <tr>
-                <td align="center">
-                    <ol>
-                        <li>Sign up at <a href="https://www.github.com" target="_blank">Github</a></li>
-                        <li>Create a GitHub repository</li>
-                        <li>Push your static files (HTML, images, etc.)</li>
-                        <li>Go to <b>Settings → Pages</b></li>
-                        <li>Select branch (<code>main</code>) and root</li>
-                        <li>Access site at <i>username.github.io/repo</i></li>
-                    </ol>
+                <th>Deploy via GitHub Pages</th>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <ul>
+                            <li>Sign up at <a href="https://www.github.com" target="_blank">GitHub</a></li>
+                            <li>Create a repository</li>
+                            <li>Push static files</li>
+                            <li>Go to <b>Settings → Pages</b></li>
+                            <li>Select branch (<code>main</code>)</li>
+                            <li>Visit <i>username.github.io/repo</i></li>
+                        </ul>
+                    </table>
                 </td>
-                <td align="center">
-                    <ol>
+            </tr>
+            <tr>
+                <th>Deploy via Netlify</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
                         <li>Sign up at <a href="https://www.netlify.com" target="_blank">Netlify</a></li>
                         <li>Click <b>"New site from Git"</b></li>
                         <li>Connect your GitHub repo</li>
-                        <li>Build command: (leave empty for static HTML)</li>
+                        <li>Leave build empty</li>
                         <li>Click <b>Deploy site</b></li>
-                        <li>Access via <i>sitename.netlify.app</i></li>
-                    </ol>
+                        <li>Visit <i>sitename.netlify.app</i></li>
+                    </ul>
                 </td>
-                <td align="center">
-                    <ol>
+            </tr>
+            <tr>
+                <th>Deploy via Render</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
                         <li>Create account at <a href="https://render.com" target="_blank">Render</a></li>
                         <li>Click <b>New → Static Site</b></li>
-                        <li>Connect your GitHub repo</li>
-                        <li>Select branch to deploy</li>
+                        <li>Connect GitHub repo</li>
+                        <li>Select branch</li>
                         <li>Click <b>Create Static Site</b></li>
-                        <li>Access via <i>onrender.com</i> link</li>
-                    </ol>
+                        <li>Visit <i>onrender.com</i> link</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <h3>Refernce Video Sulution</h3>
+                        <iframe width="340" height="200"
+                            src="https://www.youtube.com/embed/NGYp1zCBthk?si=I30FsrzE11DII2cD"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpulicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <h4>
+                        <b>🚀 Pick any platform and launch your project live within minutes!</b>
+                    </h4>
                 </td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3" align="center">
-                    <b>🚀 Pick any platform and launch your project live within minutes!</b>
-                </td>
-            </tr>
-        </tfoot>
     </table>
 </body>
 
