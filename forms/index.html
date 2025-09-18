@@ -13,8 +13,8 @@
             <hr width="90%">
             <h1>Introduction to Html - Form</h1>
             <hr width="90%">
-            <img src="https://www.computerworld.com/wp-content/uploads/2025/09/1617715-0-80087700-1757337978-microsoft_forms_cw-primary-100936076-orig.jpg?quality=50&strip=all" width="100%"
-                alt="html-cover-image">
+            <img src="https://www.computerworld.com/wp-content/uploads/2025/09/1617715-0-80087700-1757337978-microsoft_forms_cw-primary-100936076-orig.jpg?quality=50&strip=all"
+                width="100%" alt="html-cover-image">
         </caption>
         <thead>
             <th>
@@ -40,7 +40,7 @@
                         <td><b>1.</b></td>
                         <td>
                             <h3>
-                                <a href="#html">What is HTML?</a>
+                                <a href="#form">What are form's in HTML?</a>
                             </h3>
                         </td>
                     </tr>
@@ -48,7 +48,7 @@
                         <td><b>2.</b></td>
                         <td>
                             <h3>
-                                <a href="#first-website">World first Website</a>
+                                <a href="#form-tag">Form-tag</a>
                             </h3>
                         </td>
                     </tr>
@@ -56,7 +56,7 @@
                         <td><b>3.</b></td>
                         <td>
                             <h3>
-                                <a href="#hyperlink">The Concept of Hyperlinks</a>
+                                <a href="#input-field">Input types in HTML-Form's.</a>
                             </h3>
                         </td>
                     </tr>
@@ -64,7 +64,15 @@
                         <td><b>4.</b></td>
                         <td>
                             <h3>
-                                <a href="#markup">What is a Markup Language?</a>
+                                <a href="#text-area">Text area in HTML-Form's?</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>5.</b></td>
+                        <td>
+                            <h3>
+                                <a href="#form-example">Input Form Example!</a>
                             </h3>
                         </td>
                     </tr>
@@ -79,7 +87,8 @@
             </table>
         </tbody>
 
-        <table align="center" width="100%">
+        <br><br><br>
+        <table align="center" width="80%">
             <thead>
                 <th>
                     <hr width="90%">
@@ -89,88 +98,277 @@
                     <hr width="90%">
                 </th>
             </thead>
-            <table align="center" width="50%" border="1" id="html">
+
+            <table align="center" width="80%" border="1" id="form" cellpadding="20">
+                <br><br><br>
                 <thead>
                     <th>
                         <h2>
-                            1. What is HTML?
+                            What are Form's in HTML
                         </h2>
                     </th>
                 </thead>
+
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>HTML (HyperText Markup Language) is the standard language used to create and structure
-                                content on the web. It provides the basic building blocks for webpages by using tags and
-                                elements to define text, images, links, tables, and other media. While HTML alone cannot
-                                style a website or add interactivity, it forms the foundation upon which CSS (for
-                                design) and JavaScript (for functionality) are built.</p>
+                        <td>
+                            <p>HTML forms are used to collect user input. They are essential for interactive websites,
+                                allowing users to submit data, make selections, and interact with web applications.Forms
+                                contain various input elements like text fields, checkboxes, radio buttons, and dropdown
+                                menus. When a user submits a form, the data is sent to a server for processing.</p>
+                            <img src="https://myfirst-hackathon-html-zafar07.netlify.app/assets/form%20struct.jpg"
+                                alt="form-image">
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="first-website">
+            <br><br><br>
+            <table width="80%" border="1" id="form-tag" cellpadding="20" align="center">
                 <thead>
                     <th>
                         <h2>
-                            2. World’s First Website
+                            Form Tag
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>The world’s first website was created by Tim Berners-Lee in 1991 while working at CERN.
-                                It was a simple text-based page that explained the concept of the World Wide Web, how to
-                                create webpages, and how to set up servers. It had no graphics, just plain text and
-                                hyperlinks, but it marked the beginning of the modern web. The original site is still
-                                preserved at <a href="http://info.cern.ch" target="_blank"></a>.</p>
+                        <td>
+                            <p>In HTML, the &lt;form&gt; tag is used to create an input form where users can enter data,
+                                which is then sent to a server for processing.</p>
+
+                            <h3>Example:</h3>
+                            <pre>
+<code>
+The &lt;form&gt; element is a container for all form elements. 
+It defines how the form data will be submitted.
+
+&lt;form action="/submit-form" method="POST"&gt;
+  &lt;!-- Form elements go here --&gt;
+&lt;/form&gt;
+</code>
+</pre>
+
+
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="hyperlink">
+
+            <br><br><br>
+
+            <table width="80%" border="1" id="input-field" cellpadding="20" align="center">
                 <thead>
                     <th>
                         <h2>
-                            3. The Concept of Hyperlinks
+                            Input Types in HTML - Forms!
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>A hyperlink is a clickable reference in a webpage that connects one document to another.
-                                By clicking on a hyperlink, users can jump to another page, a section within the same
-                                page, or even to other resources like images, videos, or downloadable files. Hyperlinks
-                                are the foundation of web navigation and the reason why the web is called a “web,” as
-                                they create an interconnected network of information.</p>
+                        <td>
+                            <h3>1. Text → Single-line text input</h3>
+                            <p>A Text based input</p>
+                            <form>
+                                <input type="text" name="username" placeholder="Enter your name">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>2. Password → Hides the entered characters</h3>
+                            <p>An input field for password!</p>
+                            <form>
+                                <input type="password" name="password" placeholder="Enter password">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>3. Email → Validates email format</h3>
+                            <p>An input field for entering email!</p>
+                            <form>
+                                <input type="email" name="email" placeholder="Enter your email">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>4. Number → Numeric input (with min/max/step)</h3>
+                            <p>An input field for entering email!</p>
+                            <form>
+                                <input type="number" name="age" min="1" max="100">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>5. Tel → Telephone number (no built-in validation)</h3>
+                            <p>An input field for entering mobile number!</p>
+                            <form>
+                                <input type="tel" name="phone" placeholder="123-456-7890">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>6. URL → Validates a proper web address</h3>
+                            <p>An input field for entering url's!</p>
+                            <form>
+                                <input type="url" name="website" placeholder="https://example.com">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>7. File → Upload file(s)</h3>
+                            <p>An input field for uploading files!</p>
+                            <form>
+                                <input type="file" name="resume">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>8. Date → Date picker</h3>
+                            <p>An input field for picking Dates!</p>
+                            <form>
+                                <input type="date" name="john">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>9. Radio → Select one option from a group</h3>
+                            <p>Radio Button's</p>
+                            <form>
+                                <input type="radio" name="gender" value="male"> Male
+                                <input type="radio" name="gender" value="female"> Female
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>10. Checkbox → Select multiple options</h3>
+                            <p>Check Boxes.</p>
+                            <form>
+                                <input type="checkbox" name="subscribe"> Subscribe to newsletter
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>11. Color → Color picker</h3>
+                            <p>Color picker.</p>
+                            <form>
+                                <input type="color" name="favcolor">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>12. Range → Slider input (numeric range)</h3>
+                            <p>Range Slider!.</p>
+                            <form>
+                                <input type="range" name="volume" min="0" max="100">
+                            </form>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br><br><br>
+            <table align="center" width="80%" border="1" id="text-area" cellpadding="20">
+                <thead>
+                    <th>
+                        <h2>
+                            Text-Area!
+                        </h2>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Text-Area for multi-line input!</h3>
+                            <p>Unlike &lt;input type="text"&gt;, which is only single-line, the &lt;textarea&gt; element
+                                lets users enter multi-line text (like comments, messages, or feedback).</p>
+                            <form>
+                                <textarea name="message" rows="5" cols="40"
+                                    placeholder="Enter your message!"></textarea>
+                            </form>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="markup">
+            <br><br><br>
+            <table align="center" width="80%" border="1" cellpadding="20" id="form-example">
                 <thead>
                     <th>
                         <h2>
-                            4. What is a Markup Language?
+                            Form Example
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>A markup language is a computer language used to structure, format, and present text
-                                within documents. Unlike programming languages, markup languages don’t perform logical
-                                operations but instead tell the browser how to display content. Examples include HTML,
-                                XML, and Markdown. In HTML, tags like &lt;h1&gt; , &lt;p&gt;, and &lt;a&gt; are used to
-                                define headings, paragraphs, and links, giving meaning and structure to web content.</p>
+                        <td>
+                            <h3>Html - Form</h3>
+                            <form>
+                                <fieldset>
+                                    <legend>Medical Treatment</legend>
+
+                                    <br>
+                                    <div>
+                                        <div>
+                                            <label for="name">Name: </label>
+                                            <input id="name" type="text" placeholder="enter name">
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <label for="email">Email: </label>
+                                            <input id="email" type="email" placeholder="enter email">
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <label for="phone">Phone: </label>
+                                            <input id="phone" type="tel" placeholder="enter phone">
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <label for="gender">Gender: </label>
+                                            <input id="gender" type="radio" name="gender">Male
+                                            <input id="gender" type="radio" name="gender">Female
+                                            <input id="gender" type="radio" name="gender">Other
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <label for="dob">Date of Birth: </label>
+                                            <input type="date" name="dob">
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <label for="blood">Blood Group: </label>
+                                            <select name="blood" id="blood">
+                                                <option value="select">Select blood group.</option>
+                                                <option value="A+">A+</option>
+                                                <option value="B+">B+</option>
+                                                <option value="B-">B-</option>
+                                                <option value="O+">O+</option>
+                                                <option value="AB+">AB+</option>
+                                            </select>
+                                        </div>
+                                        <br><br>
+                                        <button type="submit">Submit form</button>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </table>
-
+        <br><br><br>
         <table width="100%" align="center">
             <!-- Navigation -->
             <thead>
@@ -180,6 +378,7 @@
                         Navigation
                     </h2>
                     <hr width="90%">
+                    <br><br><br>
                 </th>
             </thead>
             <tbody>
@@ -193,7 +392,7 @@
                         </th>
                     </thead>
                     <tbody align="center">
-                         <tr>
+                        <tr>
                             <td><b>1.</b></td>
                             <td>
                                 <h3>
@@ -260,14 +459,14 @@
                 </table>
             </tbody>
             <table align="center" width="100%">
-            <tr>
-                <td align="center">
-                    <hr width="90%">
-                    <span>All &copy; Copyrights reserved</span>
-                    <hr width="90%">
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <td align="center">
+                        <hr width="90%">
+                        <span>All &copy; Copyrights reserved</span>
+                        <hr width="90%">
+                    </td>
+                </tr>
+            </table>
         </table>
     </table>
 </body>
