@@ -13,8 +13,8 @@
             <hr width="90%">
             <h1>Introduction to Tables in HTML</h1>
             <hr width="90%">
-            <img src="https://cdn.prod.website-files.com/62d6f7046a38086a75086622/655fdad5a241c40d15f6ce20_a-beginners-guide-to-html-tables.png" width="100%"
-                alt="html-cover-image">
+            <img src="https://cdn.prod.website-files.com/62d6f7046a38086a75086622/655fdad5a241c40d15f6ce20_a-beginners-guide-to-html-tables.png"
+                width="100%" alt="html-cover-image">
         </caption>
         <thead>
             <th>
@@ -40,7 +40,7 @@
                         <td><b>1.</b></td>
                         <td>
                             <h3>
-                                <a href="#html">What is HTML?</a>
+                                <a href="#tables">Tables in HTML?</a>
                             </h3>
                         </td>
                     </tr>
@@ -48,7 +48,7 @@
                         <td><b>2.</b></td>
                         <td>
                             <h3>
-                                <a href="#first-website">World first Website</a>
+                                <a href="#tables-tags">Types of table tags in HTML</a>
                             </h3>
                         </td>
                     </tr>
@@ -56,7 +56,7 @@
                         <td><b>3.</b></td>
                         <td>
                             <h3>
-                                <a href="#hyperlink">The Concept of Hyperlinks</a>
+                                <a href="#tables-tags-used">Table tags used in HTML</a>
                             </h3>
                         </td>
                     </tr>
@@ -64,7 +64,7 @@
                         <td><b>4.</b></td>
                         <td>
                             <h3>
-                                <a href="#markup">What is a Markup Language?</a>
+                                <a href="#tables-attributes">Table Attributes used in HTML</a>
                             </h3>
                         </td>
                     </tr>
@@ -79,6 +79,7 @@
             </table>
         </tbody>
 
+        <br><br><br>
         <table align="center" width="100%">
             <thead>
                 <th>
@@ -87,179 +88,491 @@
                         Content
                     </h2>
                     <hr width="90%">
+                    <br><br><br>
                 </th>
             </thead>
-            <table align="center" width="50%" border="1" id="html">
+            <table align="center" width="70%" border="1" id="tables" cellpadding="20">
                 <thead>
                     <th>
                         <h2>
-                            1. What is HTML?
+                            Tags in HTML
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>HTML (HyperText Markup Language) is the standard language used to create and structure
-                                content on the web. It provides the basic building blocks for webpages by using tags and
-                                elements to define text, images, links, tables, and other media. While HTML alone cannot
-                                style a website or add interactivity, it forms the foundation upon which CSS (for
-                                design) and JavaScript (for functionality) are built.</p>
+                        <td align="justify">
+                            <p>
+                                <i>
+                                    In HTML, a table is used to display data in a structured format of rows and columns,
+                                    similar to a spreadsheet. It is created using the &lt;table&gt; element, which
+                                    organizes information into rows (&lt;tr&gt;) and cells (&lt;td&gt; for normal data
+                                    and &lt;th&gt; for headings). Tables are especially useful when you need to present
+                                    related data side by side, such as schedules, price lists, or comparison charts. A
+                                    table usually starts with an optional header row that defines the column titles,
+                                    followed by multiple rows of data. You can also group sections of a table with
+                                    &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; for better structure and styling.
+                                </i>
+                            </p>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="first-website">
+            <br><br><br>
+            <table align="center" width="70%" border="1" id="tables-tags" cellpadding="20">
                 <thead>
                     <th>
                         <h2>
-                            2. World’s First Website
+                            Types of tags in HTML Tables
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>The world’s first website was created by Tim Berners-Lee in 1991 while working at CERN.
-                                It was a simple text-based page that explained the concept of the World Wide Web, how to
-                                create webpages, and how to set up servers. It had no graphics, just plain text and
-                                hyperlinks, but it marked the beginning of the modern web. The original site is still
-                                preserved at <a href="http://info.cern.ch" target="_blank"></a>.</p>
+                        <td align="justify">
+                            <ul>
+
+                                <li>&lt;table&gt; → Defines a table container.</li>
+                                <li>&lt;tr&gt; → Defines a table row.</li>
+                                <li>&lt;td&gt; → Defines a table data cell (regular cell).</li>
+                                <li>&lt;th&gt; → Defines a table header cell (bold, centered by default).</li>
+                                <li>&lt;caption&gt; → Adds a caption (title) to the table.</li>
+                                <li>&lt;thead&gt; → Groups header rows in a table.</li>
+                                <li>&lt;tbody&gt; → Groups body content rows in a table.</li>
+                                <li>&lt;tfoot&gt; → Groups footer rows in a table.</li>
+                                <li>&lt;col&gt; → Defines column properties.</li>
+                                <li>&lt;colgroup&gt; → Groups columns for styling or attributes.</li>
+                                <li>&lt;ul&gt; → Creates an unordered list (bullets).</li>
+                                <li>&lt;ol&gt; → Creates an ordered list (numbers/letters).</li>
+                                <li>&lt;li&gt; → Defines a list item inside &lt;ul&gt; or &lt;ol&gt;.</li>
+                            </ul>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="hyperlink">
+            <br><br><br>
+            <table width="70%" border="1" id="tables-tags-used" cellpadding="20" align="center">
                 <thead>
                     <th>
                         <h2>
-                            3. The Concept of Hyperlinks
+                            Table Tags used in HTML
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>A hyperlink is a clickable reference in a webpage that connects one document to another.
-                                By clicking on a hyperlink, users can jump to another page, a section within the same
-                                page, or even to other resources like images, videos, or downloadable files. Hyperlinks
-                                are the foundation of web navigation and the reason why the web is called a “web,” as
-                                they create an interconnected network of information.</p>
+                        <td>
+                            <h3>1. &lt;table&gt;</h3>
+                            <i>Defines a table container.</i>
+                            <pre><code>
+&lt;table&gt;
+  &lt;!-- table rows go here --&gt;
+&lt;/table&gt;
+      </code></pre>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-            <table align="center" width="50%" border="1" id="markup">
-                <thead>
-                    <th>
-                        <h2>
-                            4. What is a Markup Language?
-                        </h2>
-                    </th>
-                </thead>
-                <tbody>
+
                     <tr>
-                        <td align="center">
-                            <p>A markup language is a computer language used to structure, format, and present text
-                                within documents. Unlike programming languages, markup languages don’t perform logical
-                                operations but instead tell the browser how to display content. Examples include HTML,
-                                XML, and Markdown. In HTML, tags like &lt;h1&gt; , &lt;p&gt;, and &lt;a&gt; are used to
-                                define headings, paragraphs, and links, giving meaning and structure to web content.</p>
+                        <td>
+                            <h3>2. &lt;tr&gt;</h3>
+                            <i>Defines a table row.</i>
+                            <pre><code>
+&lt;tr&gt;
+  &lt;!-- table cells go here --&gt;
+&lt;/tr&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>3. &lt;td&gt;</h3>
+                            <i>Defines a table data cell (regular cell).</i>
+                            <pre><code>
+&lt;td&gt;Cell content&lt;/td&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>4. &lt;th&gt;</h3>
+                            <i>Defines a table header cell (bold, centered by default).</i>
+                            <pre><code>
+&lt;th&gt;Header&lt;/th&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>5. &lt;caption&gt;</h3>
+                            <i>Adds a caption (title) to the table.</i>
+                            <pre><code>
+&lt;caption&gt;Table Title&lt;/caption&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>6. &lt;thead&gt;</h3>
+                            <i>Groups header rows in a table.</i>
+                            <pre><code>
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Heading 1&lt;/th&gt;
+    &lt;th&gt;Heading 2&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>7. &lt;tbody&gt;</h3>
+                            <i>Groups body content rows in a table.</i>
+                            <pre><code>
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>8. &lt;tfoot&gt;</h3>
+                            <i>Groups footer rows in a table.</i>
+                            <pre><code>
+&lt;tfoot&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Footer 1&lt;/td&gt;
+    &lt;td&gt;Footer 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tfoot&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>9. &lt;col&gt;</h3>
+                            <i>Defines column properties (like width, style).</i>
+                            <pre><code>
+&lt;col&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>10. &lt;colgroup&gt;</h3>
+                            <i>Groups columns for styling or attributes.</i>
+                            <pre><code>
+&lt;colgroup&gt;
+  &lt;col span="2" style="background-color:#f2f2f2"&gt;
+&lt;/colgroup&gt;
+      </code></pre>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </table>
-
-        <table width="100%" align="center">
-            <!-- Navigation -->
+        <br><br><br>
+        <table width="70%" border="1" id="tables-attributes" cellpadding="20" align="center">
             <thead>
                 <th>
-                    <hr width="90%">
                     <h2>
-                        Navigation
+                        Table Attributes used in HTML
                     </h2>
-                    <hr width="90%">
                 </th>
             </thead>
             <tbody>
-                <table width="70%" border="1" align="center">
-                    <thead>
-                        <th>
-                            <h2>Page no.s</h2>
-                        </th>
-                        <th>
-                            <h2>Contents</h2>
-                        </th>
-                    </thead>
-                    <tbody align="center">
-                         <tr>
-                            <td><b>1.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="/">Home</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>2.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../networking/index.html">Computer Networking</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>3.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../introduction/index.html">Introduction to HTML</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>4.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../tables/index.html">Table and Tags</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>5.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../tags/index.html">File Path and Tags</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>6.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../forms/index.html">Forms in HTML</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>7.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../deployment/index.html">Static Site Deployment</a>
-                                </h3>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot align="center">
-                        <tr>
-                            <td colspan="2">
-                                <h3> 🚀 Navigate through Content Links</h3>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <tr>
+                    <td>
+                        <h3>1. &lt;align&gt;</h3>
+                        <i>Specifies horizontal alignment of the table.</i>
+                        <ul>
+                            <li>left</li>
+                            <li>center</li>
+                            <li>right</li>
+                        </ul>
+                        <pre><code>
+&lt;table align="center"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>2. &lt;border&gt;</h3>
+                        <i>Specifies the width of the table border.</i>
+                        <ul>
+                            <li>0 (no border)</li>
+                            <li>1 (thin border)</li>
+                            <li>2, 3, ... (thicker borders)</li>
+                        </ul>
+                        <pre><code>
+&lt;table border="1"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>3. &lt;cellpadding&gt;</h3>
+                        <i>Specifies the space between the cell content and cell border.</i>
+                        <ul>
+                            <li>0</li>
+                            <li>5</li>
+                            <li>10</li>
+                            <li>any positive number</li>
+                        </ul>
+                        <pre><code>
+&lt;table cellpadding="5"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>4. &lt;cellspacing&gt;</h3>
+                        <i>Specifies the space between table cells.</i>
+                        <ul>
+                            <li>0</li>
+                            <li>5</li>
+                            <li>10</li>
+                            <li>any positive number</li>
+                        </ul>
+                        <pre><code>
+&lt;table cellspacing="5"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>5. &lt;width&gt;</h3>
+                        <i>Specifies the width of the table.</i>
+                        <ul>
+                            <li>Percentage (e.g., 50%)</li>
+                            <li>Pixels (e.g., 300px)</li>
+                        </ul>
+                        <pre><code>
+&lt;table width="50%"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>6. &lt;height&gt;</h3>
+                        <i>Specifies the height of the table.</i>
+                        <ul>
+                            <li>Percentage (e.g., 50%)</li>
+                            <li>Pixels (e.g., 200px)</li>
+                        </ul>
+                        <pre><code>
+&lt;table height="200px"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>7. &lt;background&gt;</h3>
+                        <i>Specifies a background image for the table.</i>
+                        <ul>
+                            <li>URL of an image</li>
+                        </ul>
+                        <pre><code>
+&lt;table background="bg.jpg"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>8. &lt;bordercolor&gt;</h3>
+                        <i>Specifies the color of the table border.</i>
+                        <ul>
+                            <li>color names (e.g., red)</li>
+                            <li>hex values (e.g., #ff0000)</li>
+                        </ul>
+                        <pre><code>
+&lt;table border="1" bordercolor="red"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>9. &lt;bgcolor&gt;</h3>
+                        <i>Specifies background color of the table.</i>
+                        <ul>
+                            <li>color names (e.g., yellow)</li>
+                            <li>hex values (e.g., #ffff00)</li>
+                        </ul>
+                        <pre><code>
+&lt;table bgcolor="yellow"&gt;
+      </code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>10. &lt;colspan&gt;</h3>
+                        <i>Merges multiple columns into a single cell.</i>
+                        <ul>
+                            <li>Any positive integer (e.g., 2, 3, 4)</li>
+                        </ul>
+                        <pre><code>
+&lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>11. &lt;rowspan&gt;</h3>
+                        <i>Merges multiple rows into a single cell.</i>
+                        <ul>
+                            <li>Any positive integer (e.g., 2, 3, 4)</li>
+                        </ul>
+                        <pre><code>
+&lt;td rowspan="2"&gt;Merged Cell&lt;/td&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>12. &lt;align&gt;</h3>
+                        <i>Specifies horizontal alignment of the cell content.</i>
+                        <ul>
+                            <li>left</li>
+                            <li>center</li>
+                            <li>right</li>
+                        </ul>
+                        <pre><code>
+&lt;td align="center"&gt;Centered Text&lt;/td&gt;
+      </code></pre>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>13. &lt;valign&gt;</h3>
+                        <i>Specifies vertical alignment of the cell content.</i>
+                        <ul>
+                            <li>top</li>
+                            <li>middle</li>
+                            <li>bottom</li>
+                        </ul>
+                        <pre><code>
+&lt;td valign="middle"&gt;Middle Aligned&lt;/td&gt;
+      </code></pre>
+                    </td>
+                </tr>
             </tbody>
-            <table align="center" width="100%">
+        </table>
+    </table>
+
+    <br><br><br>
+    <table width="100%" align="center">
+        <!-- Navigation -->
+        <thead>
+            <th>
+                <hr width="90%">
+                <h2>
+                    Navigation
+                </h2>
+                <hr width="90%">
+                <br><br><br>
+            </th>
+        </thead>
+        <tbody>
+            <table width="70%" border="1" align="center">
+                <thead>
+                    <th>
+                        <h2>Page no.s</h2>
+                    </th>
+                    <th>
+                        <h2>Contents</h2>
+                    </th>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td><b>1.</b></td>
+                        <td>
+                            <h3>
+                                <a href="/">Home</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../networking/index.html">Computer Networking</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>3.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../introduction/index.html">Introduction to HTML</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>4.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../tables/index.html">Table and Tags</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>5.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../tags/index.html">File Path and Tags</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>6.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../forms/index.html">Forms in HTML</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>7.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../deployment/index.html">Static Site Deployment</a>
+                            </h3>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot align="center">
+                    <tr>
+                        <td colspan="2">
+                            <h3> 🚀 Navigate through Content Links</h3>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </tbody>
+        <table align="center" width="100%">
             <tr>
                 <td align="center">
                     <hr width="90%">
@@ -268,7 +581,7 @@
                 </td>
             </tr>
         </table>
-        </table>
+    </table>
     </table>
 </body>
 

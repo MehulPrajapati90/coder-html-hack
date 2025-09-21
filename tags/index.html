@@ -40,7 +40,7 @@
                         <td><b>1.</b></td>
                         <td>
                             <h3>
-                                <a href="#html">What is HTML?</a>
+                                <a href="#tags">Tags in HTML?</a>
                             </h3>
                         </td>
                     </tr>
@@ -48,7 +48,7 @@
                         <td><b>2.</b></td>
                         <td>
                             <h3>
-                                <a href="#first-website">World first Website</a>
+                                <a href="#tags-type">Types of tags in HTML</a>
                             </h3>
                         </td>
                     </tr>
@@ -56,15 +56,7 @@
                         <td><b>3.</b></td>
                         <td>
                             <h3>
-                                <a href="#hyperlink">The Concept of Hyperlinks</a>
-                            </h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>4.</b></td>
-                        <td>
-                            <h3>
-                                <a href="#markup">What is a Markup Language?</a>
+                                <a href="#tags-used">Tags used in HTML</a>
                             </h3>
                         </td>
                     </tr>
@@ -79,6 +71,7 @@
             </table>
         </tbody>
 
+        <br><br><br>
         <table align="center" width="100%">
             <thead>
                 <th>
@@ -87,89 +80,425 @@
                         Content
                     </h2>
                     <hr width="90%">
+                    <br><br><br>
                 </th>
             </thead>
-            <table align="center" width="50%" border="1" id="html">
+            <table align="center" width="70%" border="1" id="tags" cellpadding="20">
                 <thead>
                     <th>
                         <h2>
-                            1. What is HTML?
+                            Tags in HTML
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>HTML (HyperText Markup Language) is the standard language used to create and structure
-                                content on the web. It provides the basic building blocks for webpages by using tags and
-                                elements to define text, images, links, tables, and other media. While HTML alone cannot
-                                style a website or add interactivity, it forms the foundation upon which CSS (for
-                                design) and JavaScript (for functionality) are built.</p>
+                        <td align="justify">
+                            <p>
+                                <i>
+                                    In HTML, tags are special keywords written inside angle brackets &lt;&gt; that
+                                    define
+                                    the
+                                    structure and meaning of content on a webpage. Most tags come in pairs, such as
+                                    &lt;p&gt;
+                                    (opening) and &lt;/p&gt; (closing), with the content placed in between, while some
+                                    tags like &lt;br&gt; and &lt;img&gt; are self-closing. Tags can also have attributes
+                                    (like href,
+                                    src, id, or class) that provide extra information about the element. For example,
+                                    &lt;a
+                                    href="https://google.com" &gt;Google&lt;/a&gt; creates a hyperlink. Different types
+                                    of tags serve different purposes: structural tags (&lt;html&gt;,
+
+                                    &lt;head&gt;,
+
+                                    &lt;body&gt;), text formatting tags (&lt;h1&gt;–&lt;h6&gt;, &lt;p&gt;, &lt;b&gt;,
+                                    &lt;i&gt;), media tags (&lt;img&gt;,
+                                    &lt;video&gt;, &lt;audio&gt;), form tags (&lt;form&gt;, &lt;input&gt;,
+                                    &lt;button&gt;), and semantic tags (&lt;header&gt;,
+                                    &lt;footer&gt;, &lt;nav&gt;, &lt;section&gt;).
+                                    Together, these tags
+                                    allow developers to
+                                    build web pages that are
+                                    structured, interactive,
+                                    and meaningful for both
+                                    browsers and users.
+                                </i>
+                            </p>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="first-website">
+            <br><br><br>
+            <table align="center" width="70%" border="1" id="tags-type" cellpadding="20">
                 <thead>
                     <th>
                         <h2>
-                            2. World’s First Website
+                            Types of tags in HTML
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>The world’s first website was created by Tim Berners-Lee in 1991 while working at CERN.
-                                It was a simple text-based page that explained the concept of the World Wide Web, how to
-                                create webpages, and how to set up servers. It had no graphics, just plain text and
-                                hyperlinks, but it marked the beginning of the modern web. The original site is still
-                                preserved at <a href="http://info.cern.ch" target="_blank"></a>.</p>
+                        <td align="justify">
+                            <ul>
+                                <li>&lt;!DOCTYPE html&gt; → Defines the document type (HTML5).</li>
+                                <li>&lt;html&gt; → Root element of the document.</li>
+                                <li>&lt;head&gt; → Contains metadata (title, styles, scripts).</li>
+                                <li>&lt;title&gt; → Title of the webpage (appears in browser tab).</li>
+                                <li>&lt;meta&gt; → Metadata (charset, description, viewport, etc.).</li>
+                                <li>&lt;link&gt; → Links external resources (like CSS).</li>
+                                <li>&lt;script&gt; → Embeds or links JavaScript code.</li>
+                                <li>&lt;body&gt; → Main content of the page.</li>
+                                <li>&lt;h1&gt; – &lt;h6&gt; → Headings (largest to smallest).</li>
+                                <li>&lt;p&gt; → Paragraph text.</li>
+                                <li>&lt;a&gt; → Hyperlink (anchor).</li>
+                                <li>&lt;img&gt; → Image.</li>
+                                <li>&lt;ul&gt; → Unordered list (bullets).</li>
+                                <li>&lt;ol&gt; → Ordered list (numbers).</li>
+                                <li>&lt;li&gt; → List item.</li>
+                                <li>&lt;div&gt; → Block-level container.</li>
+                                <li>&lt;span&gt; → Inline container.</li>
+                                <li>&lt;table&gt; → Table container.</li>
+                                <li>&lt;tr&gt; → Table row.</li>
+                                <li>&lt;td&gt; → Table cell (data).</li>
+                                <li>&lt;th&gt; → Table header cell.</li>
+                                <li>&lt;form&gt; → Creates a form for user input.</li>
+                                <li>&lt;input&gt; → Input field (text, checkbox, radio, etc.).</li>
+                                <li>&lt;textarea&gt; → Multi-line text input.</li>
+                                <li>&lt;button&gt; → Button element.</li>
+                                <li>&lt;label&gt; → Label for form elements.</li>
+                                <li>&lt;header&gt; → Header section of a webpage.</li>
+                                <li>&lt;footer&gt; → Footer section.</li>
+                                <li>&lt;nav&gt; → Navigation links.</li>
+                                <li>&lt;section&gt; → Defines a section in the page.</li>
+                                <li>&lt;article&gt; → Represents self-contained content (like a blog post).</li>
+                                <li>&lt;br&gt; → Line break.</li>
+                                <li>&lt;hr&gt; → Horizontal line.</li>
+                            </ul>
+
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <table align="center" width="50%" border="1" id="hyperlink">
+            <br><br><br>
+            <table width="70%" border="1" id="tags-used" cellpadding="20" align="center">
                 <thead>
                     <th>
                         <h2>
-                            3. The Concept of Hyperlinks
+                            Tags used in HTML
                         </h2>
                     </th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td align="center">
-                            <p>A hyperlink is a clickable reference in a webpage that connects one document to another.
-                                By clicking on a hyperlink, users can jump to another page, a section within the same
-                                page, or even to other resources like images, videos, or downloadable files. Hyperlinks
-                                are the foundation of web navigation and the reason why the web is called a “web,” as
-                                they create an interconnected network of information.</p>
+                        <td>
+                            <h3>1. &lt;!DOCTYPE html&gt;</h3>
+                            <i>Defines the document type (HTML5).</i>
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+      </code></pre>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-            <table align="center" width="50%" border="1" id="markup">
-                <thead>
-                    <th>
-                        <h2>
-                            4. What is a Markup Language?
-                        </h2>
-                    </th>
-                </thead>
-                <tbody>
+
                     <tr>
-                        <td align="center">
-                            <p>A markup language is a computer language used to structure, format, and present text
-                                within documents. Unlike programming languages, markup languages don’t perform logical
-                                operations but instead tell the browser how to display content. Examples include HTML,
-                                XML, and Markdown. In HTML, tags like &lt;h1&gt; , &lt;p&gt;, and &lt;a&gt; are used to
-                                define headings, paragraphs, and links, giving meaning and structure to web content.</p>
+                        <td>
+                            <h3>2. &lt;html&gt;</h3>
+                            <i>Root element of the document.</i>
+                            <pre><code>
+&lt;html&gt;
+  &lt;!-- content goes here --&gt;
+&lt;/html&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>3. &lt;head&gt;</h3>
+                            <i>Contains metadata (title, styles, scripts).</i>
+                            <pre><code>
+&lt;head&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>4. &lt;title&gt;</h3>
+                            <i>Title of the webpage (appears in browser tab).</i>
+                            <pre><code>
+&lt;title&gt;My Website&lt;/title&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>5. &lt;meta&gt;</h3>
+                            <i>Metadata (charset, description, viewport, etc.).</i>
+                            <pre><code>
+&lt;meta charset="UTF-8"&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>6. &lt;link&gt;</h3>
+                            <i>Links external resources (like CSS).</i>
+                            <pre><code>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>7. &lt;script&gt;</h3>
+                            <i>Embeds or links JavaScript code.</i>
+                            <pre><code>
+&lt;script src="app.js"&gt;&lt;/script&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>8. &lt;body&gt;</h3>
+                            <i>Main content of the page.</i>
+                            <pre><code>
+&lt;body&gt;
+  &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>9. &lt;h1&gt; – &lt;h6&gt;</h3>
+                            <i>Headings (largest to smallest).</i>
+                            <pre><code>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h6&gt;Smallest Heading&lt;/h6&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>10. &lt;p&gt;</h3>
+                            <i>Paragraph text.</i>
+                            <pre><code>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>11. &lt;a&gt;</h3>
+                            <i>Hyperlink (anchor).</i>
+                            <pre><code>
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>12. &lt;img&gt;</h3>
+                            <i>Image element.</i>
+                            <pre><code>
+&lt;img src="image.jpg" alt="Description"&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>13. &lt;ul&gt; &amp; &lt;li&gt;</h3>
+                            <i>Unordered list with list items.</i>
+                            <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>14. &lt;ol&gt; &amp; &lt;li&gt;</h3>
+                            <i>Ordered list with list items.</i>
+                            <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>15. &lt;div&gt;</h3>
+                            <i>Block-level container.</i>
+                            <pre><code>
+&lt;div&gt;Content here&lt;/div&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>16. &lt;span&gt;</h3>
+                            <i>Inline container.</i>
+                            <pre><code>
+&lt;span&gt;Inline text&lt;/span&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>17. &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h3>
+                            <i>Table structure with rows, cells, and headers.</i>
+                            <pre><code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Heading&lt;/th&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>18. &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;</h3>
+                            <i>Form elements for user input.</i>
+                            <pre><code>
+&lt;form&gt;
+  &lt;label&gt;Name: &lt;/label&gt;
+  &lt;input type="text"&gt;
+  &lt;textarea&gt;&lt;/textarea&gt;
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>19. &lt;header&gt;</h3>
+                            <i>Header section of a webpage.</i>
+                            <pre><code>
+&lt;header&gt;
+  &lt;h1&gt;Site Title&lt;/h1&gt;
+&lt;/header&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>20. &lt;footer&gt;</h3>
+                            <i>Footer section.</i>
+                            <pre><code>
+&lt;footer&gt;
+  &amp;copy; 2025 My Website
+&lt;/footer&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>21. &lt;nav&gt;</h3>
+                            <i>Navigation links.</i>
+                            <pre><code>
+&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>22. &lt;section&gt;</h3>
+                            <i>Defines a section in the page.</i>
+                            <pre><code>
+&lt;section&gt;
+  &lt;h2&gt;About Us&lt;/h2&gt;
+&lt;/section&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>23. &lt;article&gt;</h3>
+                            <i>Represents self-contained content (like a blog post).</i>
+                            <pre><code>
+&lt;article&gt;
+  &lt;h2&gt;Blog Title&lt;/h2&gt;
+  &lt;p&gt;Blog content...&lt;/p&gt;
+&lt;/article&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>24. &lt;br&gt;</h3>
+                            <i>Line break.</i>
+                            <pre><code>
+Line 1&lt;br&gt;
+
+Line 2
+      </code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>25. &lt;hr&gt;</h3>
+                            <i>Horizontal line.</i>
+                            <pre><code>
+&lt;hr&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>26. &lt;pre&gt;</h3>
+                            <i>It show, exactly what you write!</i>
+                            <pre><code>
+&lt;pre&gt; Hello man! &lt;/pre&gt;
+      </code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>27. &lt;code&gt;</h3>
+                            <i>This tag is used for writing code component!</i>
+                            <pre><code>
+&lt;code&gt; This a code component! &lt;/codegt;
+      </code></pre>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </table>
+
+        <br><br><br>
 
         <table width="100%" align="center">
             <!-- Navigation -->
@@ -180,6 +509,7 @@
                         Navigation
                     </h2>
                     <hr width="90%">
+                    <br><br><br>
                 </th>
             </thead>
             <tbody>
@@ -193,7 +523,7 @@
                         </th>
                     </thead>
                     <tbody align="center">
-                         <tr>
+                        <tr>
                             <td><b>1.</b></td>
                             <td>
                                 <h3>
@@ -260,14 +590,14 @@
                 </table>
             </tbody>
             <table align="center" width="100%">
-            <tr>
-                <td align="center">
-                    <hr width="90%">
-                    <span>All &copy; Copyrights reserved</span>
-                    <hr width="90%">
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <td align="center">
+                        <hr width="90%">
+                        <span>All &copy; Copyrights reserved</span>
+                        <hr width="90%">
+                    </td>
+                </tr>
+            </table>
         </table>
     </table>
 </body>
