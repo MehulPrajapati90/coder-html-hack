@@ -60,6 +60,22 @@
                             </h3>
                         </td>
                     </tr>
+                    <tr>
+                        <td><b>4.</b></td>
+                        <td>
+                            <h3>
+                                <a href="#file-path">File path in HTML</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>5.</b></td>
+                        <td>
+                            <h3>
+                                <a href="#path-exp">Absolute & Relative path in HTML</a>
+                            </h3>
+                        </td>
+                    </tr>
                 </tbody>
                 <tfoot align="center">
                     <tr>
@@ -500,105 +516,198 @@ Line 2
 
         <br><br><br>
 
-        <table width="100%" align="center">
-            <!-- Navigation -->
+        <table align="center" width="70%" border="1" id="file-path" cellpadding="20">
             <thead>
                 <th>
-                    <hr width="90%">
                     <h2>
-                        Navigation
+                        File path in HTML
                     </h2>
-                    <hr width="90%">
-                    <br><br><br>
+                    <p>
+                        <i>
+                            In HTML, a file path is a way to tell the browser where to find a file, such as an image,
+                            CSS stylesheet, JavaScript file, or other resources that are linked to a webpage. There are
+                            two main types of file paths: absolute paths and relative paths. An absolute path provides
+                            the full URL to the file, starting from the domain name, for example,
+                            https://example.com/images/photo.jpg. This type of path points to a fixed location on the
+                            web and can be accessed from anywhere. On the other hand, a relative path specifies the
+                            file’s location in relation to the current HTML file, making it easier to manage files
+                            within the same project. For example, images/photo.jpg points to a file inside the images
+                            folder located in the same directory as the HTML file, while ../images/photo.jpg points to a
+                            file in the images folder located one level above the current directory. Using correct file
+                            paths ensures that resources are loaded properly, allowing the webpage to display images,
+                            apply styles, and execute scripts as intended.
+                        </i>
+                    </p>
                 </th>
             </thead>
             <tbody>
-                <table width="70%" border="1" align="center">
-                    <thead>
-                        <th>
-                            <h2>Page no.s</h2>
-                        </th>
-                        <th>
-                            <h2>Contents</h2>
-                        </th>
-                    </thead>
-                    <tbody align="center">
-                        <tr>
-                            <td><b>1.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="/">Home</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>2.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../networking/index.html">Computer Networking</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>3.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../introduction/index.html">Introduction to HTML</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>4.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../tables/index.html">Table and Tags</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>5.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../tags/index.html">File Path and Tags</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>6.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../forms/index.html">Forms in HTML</a>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><b>7.</b></td>
-                            <td>
-                                <h3>
-                                    <a href="../deployment/index.html">Static Site Deployment</a>
-                                </h3>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot align="center">
-                        <tr>
-                            <td colspan="2">
-                                <h3> 🚀 Navigate through Content Links</h3>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </tbody>
-            <table align="center" width="100%">
                 <tr>
-                    <td align="center">
-                        <hr width="90%">
-                        <span>All &copy; Copyrights reserved</span>
-                        <hr width="90%">
+                    <td align="justify">
+                        <p><i>
+                                Two types of file-path in html
+                            </i></p>
+                        <ul>
+                            <li>Relative file path</li>
+                            <li>Absolute file path</li>
+                        </ul>
+
                     </td>
                 </tr>
-            </table>
+            </tbody>
         </table>
+        <br><br><br>
+        <table width="70%" border="1" id="path-exp" cellpadding="20" align="center">
+            <thead>
+                <th>
+                    <h2>
+                        Relative & Absolute file path!
+                    </h2>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>1. Relative File Path</h3>
+                        <i>
+                            A relative file path in HTML specifies the location of a file in relation to the current
+                            HTML document. It does not include the full URL but instead uses the folder structure
+                            of your project to locate files. For example, if an image is in the same folder as the
+                            HTML file, you can simply use <code>image.jpg</code> as the path. If the image is in
+                            a subfolder called <code>images</code>, the path would be <code>images/image.jpg</code>.
+                            Relative paths are useful when moving a website between servers because they do not
+                            depend on the full domain name.
+                        </i>
+                        
+                        <div>
+                            <br>
+                            <img height="300" width="500" src="../assets/images/relative-path.png" alt="Relative-path-reference">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>2. Absolute File Path</h3>
+                        <i>
+                            An absolute file path in HTML provides the full URL or complete path to a resource,
+                            including the domain name or root directory. For example, an image hosted on a website
+                            could be linked using <code>https://example.com/images/image.jpg</code>. Absolute paths
+                            are helpful when linking to files hosted on other servers or external websites. However,
+                            they are less flexible for moving files within your own project, because the full path
+                            must remain the same.
+                        </i>
+                        <div>
+                            <br>
+                            <img height="300" width="500" src="../assets//images/absolute-path.png" alt="Absolute-path-reference">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </table>
+    </table>
+
+    <br><br><br>
+
+    <table width="100%" align="center">
+        <!-- Navigation -->
+        <thead>
+            <th>
+                <hr width="90%">
+                <h2>
+                    Navigation
+                </h2>
+                <hr width="90%">
+                <br><br><br>
+            </th>
+        </thead>
+        <tbody>
+            <table width="70%" border="1" align="center">
+                <thead>
+                    <th>
+                        <h2>Page no.s</h2>
+                    </th>
+                    <th>
+                        <h2>Contents</h2>
+                    </th>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td><b>1.</b></td>
+                        <td>
+                            <h3>
+                                <a href="/">Home</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../networking/index.html">Computer Networking</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>3.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../introduction/index.html">Introduction to HTML</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>4.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../tables/index.html">Table and Tags</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>5.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../tags/index.html">File Path and Tags</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>6.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../forms/index.html">Forms in HTML</a>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>7.</b></td>
+                        <td>
+                            <h3>
+                                <a href="../deployment/index.html">Static Site Deployment</a>
+                            </h3>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot align="center">
+                    <tr>
+                        <td colspan="2">
+                            <h3> 🚀 Navigate through Content Links</h3>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </tbody>
+        <table align="center" width="100%">
+            <tr>
+                <td align="center">
+                    <hr width="90%">
+                    <span>All &copy; Copyrights reserved</span>
+                    <hr width="90%">
+                </td>
+            </tr>
+        </table>
+    </table>
     </table>
 </body>
 
